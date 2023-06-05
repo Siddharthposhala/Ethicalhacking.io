@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ethical Hacking Tools</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <!-- Additional CSS or JavaScript files can be included here -->
+    <style>
+      /* CSS styles go here */
+    </style>
+  </head>
+  <body style="background-color: rgb(30 27 75)">
+    <!--navbar-->
+    <nav style="background-color: black">
+      <div
+        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+      >
+        <a href="#" class="flex items-center">
+          <img src="logo.png" class="h-8 mr-3" alt="Logo" />
+          <span
+            class="self-center text-2xl font-semibold whitespace-nowrap text-white"
+            >Ethical Hacking Tools</span
+          >
+        </a>
+        <div class="flex md:order-2">
+          <button
+            type="button"
+            data-collapse-toggle="navbar-search"
+            aria-controls="navbar-search"
+            aria-expanded="false"
+            class="md:hidden text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 mr-1"
+          >
+            <svg
+              class="w-5 h-5"
+              aria-hidden="true"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+            <span class="sr-only">Search</span>
+          </button>
+          <div class="relative hidden md:block">
+            <div
+              class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none"
+            >
+              <svg
+                class="w-5 h-5 text-gray-500"
+                aria-hidden="true"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+              <span class="sr-only">Search icon</span>
+            </div>
+            <input
+              type="text"
+              id="search-navbar"
+              class="block w-full p-2 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              placeholder="Search..."
+            />
+          </div>
+          <button
+            data-collapse-toggle="navbar-search"
+            type="button"
+            class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-search"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Open menu</span>
+            <svg
+              class="w-6 h-6"
+              aria-hidden="true"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+        </div>
+        <div
+          class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+          id="navbar-search"
+        >
+          <div class="relative mt-3 md:hidden">
+            <div
+              class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none"
+            >
+              <svg
+                class="w-5 h-5 text-gray-500"
+                aria-hidden="true"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </div>
+            <input
+              type="text"
+              id="search-navbar"
+              class="block w-full p-2 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              placeholder="Search..."
+            />
+          </div>
+          <ul
+            class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:dark:bg-gray-900 dark:border-gray-700"
+          >
+            <li>
+              <a
+                href="index.html"
+                class="self-center text-l font-semibold whitespace-nowrap p-2 text-white border border-gray-600 rounded-lg"
+                aria-current="page"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="about.html"
+                class="self-center text-l font-semibold whitespace-nowrap p-2 text-white border border-gray-600 rounded-lg"
+                >About</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--navbar-->
+    <!--info-->
+    <br />
+    <header class="text-white">
+      Ethical Hacking Tools: Unveiling the Secrets of Cybersecurity
+    </header>
+    <br />
+    <main class="text-white">
+      <section>
+        <h1>Introduction:</h1>
+        <p>
+          Welcome to our website dedicated to exploring the world of ethical
+          hacking tools. This project has been developed by Siddharth Poshala
+          and Ellangi Vineela, two passionate students with a keen interest in
+          cybersecurity. Our goal is to provide a comprehensive resource for
+          individuals interested in understanding and utilizing ethical hacking
+          tools for various purposes, all within legal and ethical boundaries.
+        </p>
+        <br />
+        <h1>About the Website:</h1>
+        <p>
+          Our website serves as a valuable platform for both beginners and
+          experienced individuals seeking knowledge about ethical hacking tools.
+          We have meticulously curated a collection of tools that are commonly
+          used by ethical hackers and security professionals in their line of
+          work. Each tool is accompanied by detailed descriptions, features, and
+          instructions on how to use them effectively.
+        </p>
+        <br />
+        <h1>Categories of Ethical Hacking Tools:</h1>
+        <dl>
+          <br />
+          <dt>
+            We have organized the tools into distinct categories to facilitate
+            easy navigation and exploration. These categories include:
+          </dt>
+          <br />
+          <dd>
+            1. Vulnerability Scanners: Tools that help identify vulnerabilities
+            in computer systems, networks, and web applications.
+          </dd>
+          <dd>
+            2. Network Scanners: Tools used to discover and map network
+            infrastructure, identifying open ports and potential
+            vulnerabilities.
+          </dd>
+          <dd>
+            3. Password Crackers: Tools designed to test the strength of
+            passwords by attempting to crack them using various technique
+          </dd>
+          <dd>
+            4. Exploitation Frameworks: Comprehensive platforms that enable
+            ethical hackers to discover, develop, and deploy exploits against
+            targeted systems.
+          </dd>
+          <dd>
+            5. Web Application Scanners: Specialized tools used to assess the
+            security posture of web applications, identifying potential
+            vulnerabilities.
+          </dd>
+          <dd>
+            6. Wireless Network Tools: Tools utilized for analyzing and securing
+            wireless networks, including Wi-Fi network discovery, monitoring,
+            and auditing.
+          </dd>
+        </dl>
+        <br />
+        <h1>Conclusion:</h1>
+        <p>
+          Our website on ethical hacking tools represents the culmination of our
+          efforts as students passionate about cybersecurity. We encourage
+          visitors to explore the different categories, learn about the tools,
+          and gain insights into the ethical hacking field. It is crucial to
+          remember that ethical hacking is conducted responsibly and within
+          legal boundaries, with the ultimate aim of bolstering cybersecurity
+          defenses and protecting individuals, organizations, and society as a
+          whole.
+        </p>
+      </section>
+    </main>
+    <!--info-->
+  </body>
+  <br /><br />
+  <footer
+    style="
+      background-color: black;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    "
+  >
+    Developed by Siddharth Poshala &amp; Ellangi Vineela
+  </footer>
+</html>

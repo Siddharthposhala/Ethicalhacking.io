@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ethical Hacking Tools</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <!-- Additional CSS or JavaScript files can be included here -->
+    <style>
+      /* CSS styles go here */
+    </style>
+  </head>
+  <body style="background-color: rgb(30 27 75)">
+    <!--navbar-->
+    <nav style="background-color: black">
+      <div
+        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+      >
+        <a href="#" class="flex items-center">
+          <img src="logo.png" class="h-8 mr-3" alt="Logo" />
+          <span
+            class="self-center text-2xl font-semibold whitespace-nowrap text-white"
+            >Ethical Hacking Tools</span
+          >
+        </a>
+        <div class="flex md:order-2">
+          <button
+            type="button"
+            data-collapse-toggle="navbar-search"
+            aria-controls="navbar-search"
+            aria-expanded="false"
+            class="md:hidden text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 mr-1"
+          >
+            <svg
+              class="w-5 h-5"
+              aria-hidden="true"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+            <span class="sr-only">Search</span>
+          </button>
+          <div class="relative hidden md:block">
+            <div
+              class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none"
+            >
+              <svg
+                class="w-5 h-5 text-gray-500"
+                aria-hidden="true"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+              <span class="sr-only">Search icon</span>
+            </div>
+            <input
+              type="text"
+              id="search-navbar"
+              class="block w-full p-2 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              placeholder="Search..."
+            />
+          </div>
+          <button
+            data-collapse-toggle="navbar-search"
+            type="button"
+            class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-search"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Open menu</span>
+            <svg
+              class="w-6 h-6"
+              aria-hidden="true"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+        </div>
+        <div
+          class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+          id="navbar-search"
+        >
+          <div class="relative mt-3 md:hidden">
+            <div
+              class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none"
+            >
+              <svg
+                class="w-5 h-5 text-gray-500"
+                aria-hidden="true"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </div>
+            <input
+              type="text"
+              id="search-navbar"
+              class="block w-full p-2 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              placeholder="Search..."
+            />
+          </div>
+          <ul
+            class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:dark:bg-gray-900 dark:border-gray-700"
+          >
+            <li>
+              <a
+                href="index.html"
+                class="self-center text-l font-semibold whitespace-nowrap p-2 text-white border border-gray-600 rounded-lg"
+                aria-current="page"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="about.html"
+                class="self-center text-l font-semibold whitespace-nowrap p-2 text-white border border-gray-600 rounded-lg"
+                >About</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--navbar-->
+
+    <!--Information about hacking tools-->
+    <!-- <br />
+    <div class="text-center">
+      <h3 class="mb-5 text-lg font-medium text-gray-900 dark:text-white">
+        Categories of Ethical Hacking tools
+      </h3>
+    </div> -->
+    <br />
+    <br />
+    <ul class="grid w-full gap-6 md:grid-cols-3">
+      <li>
+        <input
+          type="checkbox"
+          id="react-option"
+          value=""
+          class="hidden peer"
+          required=""
+        />
+        <label
+          for="react-option"
+          class="inline-flex items-center justify-between w-full p-5 text-gray-900 bg-white border-2 border-gray-500 rounded-lg cursor-pointer peer-checked:border-blue-600 dark:peer-checked:text-gray-300 peer-checked:text-gray-600 hover:bg-gray-50 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700"
+        >
+          <div class="block">
+            <div class="w-full text-lg font-semibold">
+              Vulnerability Scanners :
+            </div>
+            <br />
+            <div class="w-full text-sm">
+              <dl>
+                <dt>OpenVAS</dt>
+                <dd>
+                  - OpenVAS (Open Vulnerability Assessment System) is an
+                  open-source vulnerability scanning and management tool
+                  designed to detect and assess security vulnerabilities in
+                  computer systems and networks. It provides a comprehensive set
+                  of features for vulnerability scanning, vulnerability
+                  management, and reporting.
+                </dd>
+                <br />
+                <dt>Nessus</dt>
+                <dd>
+                  - Nessus is a widely used vulnerability scanner that helps
+                  identify security weaknesses and potential vulnerabilities in
+                  computer systems, networks, and applications, allowing
+                  organizations to proactively address them before they can be
+                  exploited by attackers.
+                </dd>
+                <br />
+                <dt>QualysGuard</dt>
+                <dd>
+                  - QualysGuard is a cloud-based vulnerability management and
+                  compliance solution designed to help organizations identify
+                  and prioritize security risks across their IT infrastructure.
+                  It offers continuous monitoring, scanning, and reporting
+                  capabilities to enhance the security posture of an
+                  organization.
+                </dd>
+              </dl>
+            </div>
+          </div>
+        </label>
+      </li>
+      <li>
+        <input
+          type="checkbox"
+          id="flowbite-option"
+          value=""
+          class="hidden peer"
+        />
+        <label
+          for="react-option"
+          class="inline-flex items-center justify-between w-full p-5 text-gray-900 bg-white border-2 border-gray-500 rounded-lg cursor-pointer peer-checked:border-blue-600 dark:peer-checked:text-gray-300 peer-checked:text-gray-600 hover:bg-gray-50 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700"
+        >
+          <div class="block">
+            <div class="w-full text-lg font-semibold">Network Scanners :</div>
+            <br />
+            <div class="w-full text-sm">
+              <dl>
+                <dt>Nmap</dt>
+                <dd>
+                  - Nmap is a widely used network scanning and discovery tool
+                  that helps identify open ports, detect operating systems, and
+                  gather information about network hosts. It provides a
+                  comprehensive and flexible set of features for both simple and
+                  complex network reconnaissance tasks.
+                </dd>
+                <br />
+                <dt>Zenmap</dt>
+                <dd>
+                  - Zenmap is a graphical user interface (GUI) for Nmap, a
+                  powerful network scanning tool. It provides a visual
+                  representation of network hosts and their open ports, allowing
+                  users to easily analyze and explore network vulnerabilities.
+                </dd>
+                <br />
+                <dt>Angry IP Scanner</dt>
+                <dd>
+                  - Angry IP Scanner is a network scanning tool that allows
+                  users to scan IP addresses and ports to identify active hosts
+                  and collect information about them, such as hostname and MAC
+                  address, to aid in network analysis and troubleshooting. It
+                  provides a simple and fast way to perform basic network
+                  reconnaissance.
+                </dd>
+              </dl>
+            </div>
+          </div>
+        </label>
+      </li>
+      <li>
+        <input
+          type="checkbox"
+          id="angular-option"
+          value=""
+          class="hidden peer"
+        />
+        <label
+          for="react-option"
+          class="inline-flex items-center justify-between w-full p-5 text-gray-900 bg-white border-2 border-gray-500 rounded-lg cursor-pointer peer-checked:border-blue-600 dark:peer-checked:text-gray-300 peer-checked:text-gray-600 hover:bg-gray-50 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700"
+        >
+          <div class="block">
+            <div class="w-full text-lg font-semibold">Password Crackers :</div>
+            <br />
+            <div class="w-full text-sm">
+              <dl>
+                <dt>John the Ripper</dt>
+                <dd>
+                  - John the Ripper is a powerful and popular password cracking
+                  tool that is used to test the strength of passwords by
+                  attempting to break them through various techniques such as
+                  brute-force and dictionary attacks. It is widely utilized by
+                  security professionals and ethical hackers to assess the
+                  vulnerability of systems and enhance password security.
+                </dd>
+                <br />
+                <dt>Hashcat</dt>
+                <dd>
+                  - Hashcat is a powerful password cracking tool that utilizes
+                  the technique of brute-forcing to decrypt hashed passwords,
+                  providing a means to test the strength of password security
+                  measures.
+                </dd>
+                <br />
+                <dt>Hydra</dt>
+                <dd>
+                  - Hydra is a powerful password cracking tool that can perform
+                  brute force and dictionary attacks against various network
+                  protocols, including HTTP, FTP, SMTP, and more. It is commonly
+                  used by ethical hackers to test the strength of passwords and
+                  to identify weak authentication mechanisms.
+                </dd>
+              </dl>
+            </div>
+          </div>
+        </label>
+      </li>
+      <li>
+        <input
+          type="checkbox"
+          id="react-option"
+          value=""
+          class="hidden peer"
+          required=""
+        />
+        <label
+          for="react-option"
+          class="inline-flex items-center justify-between w-full p-5 text-gray-900 bg-white border-2 border-gray-500 rounded-lg cursor-pointer peer-checked:border-blue-600 dark:peer-checked:text-gray-300 peer-checked:text-gray-600 hover:bg-gray-50 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700"
+        >
+          <div class="block">
+            <div class="w-full text-lg font-semibold">
+              Exploitation Frameworks :
+            </div>
+            <br />
+            <div class="w-full text-sm">
+              <dl>
+                <dt>Metasploit Framework</dt>
+                <dd>
+                  - The Metasploit Framework is an advanced open-source
+                  penetration testing framework that provides tools for
+                  identifying vulnerabilities, exploiting them, and conducting
+                  security assessments. It offers a wide range of modules,
+                  exploits, and payloads to aid ethical hackers in testing and
+                  securing computer systems and networks.
+                </dd>
+                <br />
+                <dt>Cobalt Strike</dt>
+                <dd>
+                  - Cobalt Strike is a commercial penetration testing tool that
+                  provides advanced post-exploitation capabilities, allowing
+                  security professionals to simulate sophisticated cyber attacks
+                  and test the effectiveness of their defenses. It offers a
+                  range of features including command-and-control (C2)
+                  communication, social engineering, and the ability to generate
+                  targeted phishing emails.
+                </dd>
+                <br />
+                <dt>Canvas</dt>
+                <dd>
+                  - Canvas is a commercial exploitation framework used for
+                  penetration testing and ethical hacking purposes. It provides
+                  a wide range of tools and functionalities to identify
+                  vulnerabilities, perform exploits, and test the security of
+                  target systems.
+                </dd>
+              </dl>
+            </div>
+          </div>
+        </label>
+      </li>
+      <li>
+        <input
+          type="checkbox"
+          id="flowbite-option"
+          value=""
+          class="hidden peer"
+        />
+        <label
+          for="react-option"
+          class="inline-flex items-center justify-between w-full p-5 text-gray-900 bg-white border-2 border-gray-500 rounded-lg cursor-pointer peer-checked:border-blue-600 dark:peer-checked:text-gray-300 peer-checked:text-gray-600 hover:bg-gray-50 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700"
+        >
+          <div class="block">
+            <div class="w-full text-lg font-semibold">
+              Web Application Security Tools :
+            </div>
+            <br />
+            <div class="w-full text-sm">
+              <dl>
+                <dt>OWASP WebScarab</dt>
+                <dd>
+                  - OWASP WebScarab is a Java-based web application testing tool
+                  designed for analyzing and manipulating HTTP/S traffic to
+                  identify vulnerabilities and security issues. It provides a
+                  range of functionalities such as intercepting requests and
+                  responses, session management, parameter manipulation, and
+                  vulnerability scanning.
+                </dd>
+                <br />
+                <dt>Burp Suite</dt>
+                <dd>
+                  - Burp Suite is a comprehensive web application security
+                  testing tool that enables security professionals to identify
+                  and exploit vulnerabilities in web applications. It provides a
+                  range of functionalities, including scanning, intercepting and
+                  modifying web traffic, and analyzing the security of web
+                  applications.
+                </dd>
+                <br />
+                <dt>SQLMap</dt>
+                <dd>
+                  - SQLMap is an open-source penetration testing tool that
+                  automates the process of detecting and exploiting SQL
+                  injection vulnerabilities in web applications, providing a
+                  convenient and efficient means of assessing their security
+                  posture.
+                </dd>
+              </dl>
+            </div>
+          </div>
+        </label>
+      </li>
+      <li>
+        <input
+          type="checkbox"
+          id="angular-option"
+          value=""
+          class="hidden peer"
+        />
+        <label
+          for="react-option"
+          class="inline-flex items-center justify-between w-full p-5 text-gray-900 bg-white border-2 border-gray-500 rounded-lg cursor-pointer peer-checked:border-blue-600 dark:peer-checked:text-gray-300 peer-checked:text-gray-600 hover:bg-gray-50 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700"
+        >
+          <div class="block">
+            <div class="w-full text-lg font-semibold">
+              Wireless Hacking Tools :
+            </div>
+            <br />
+            <div class="w-full text-sm">
+              <dl>
+                <dt>Aircrack-ng</dt>
+                <dd>
+                  - Aircrack-ng is a powerful and widely used open-source tool
+                  suite designed for assessing the security of wireless networks
+                  by analyzing Wi-Fi encryption protocols and performing network
+                  packet capturing and analysis, including the cracking of WEP
+                  and WPA/WPA2-PSK passwords.
+                </dd>
+                <br />
+                <dt>Kismet</dt>
+                <dd>
+                  - Kismet is a wireless network detection and intrusion
+                  detection system (IDS) that is used to identify and monitor
+                  wireless networks and devices in real-time. It provides
+                  detailed information about wireless networks, including SSID,
+                  signal strength, encryption, and associated devices, making it
+                  a valuable tool for wireless network security assessments.
+                </dd>
+                <br />
+                <dt>Fern Wi-Fi Cracker</dt>
+                <dd>
+                  - Fern Wi-Fi Cracker is a wireless security auditing and
+                  attack tool designed for discovering vulnerabilities in Wi-Fi
+                  networks. It provides a graphical user interface and utilizes
+                  various attack techniques to crack WEP and WPA/WPA2 encryption
+                  keys.
+                </dd>
+              </dl>
+            </div>
+          </div>
+        </label>
+      </li>
+    </ul>
+    <br />
+    <br />
+    <!--Information about hacking tools-->
+  </body>
+  <footer
+    style="
+      background-color: black;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    "
+  >
+    Developed by Siddharth Poshala &amp; Ellangi Vineela
+  </footer>
+</html>
